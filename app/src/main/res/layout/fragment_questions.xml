@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAFF73"
+    tools:context=".QuestionsFragment">
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Which is the old capital of Bulgaria?"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/answersRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionText">
+
+        <RadioButton
+            android:id="@+id/answer1Rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sofia"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/answer2Rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Veliko Tarnovo"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/answer3Rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plovdiv"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/answer4Rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pliska"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answersRadioGroup" />
+
+    <TextView
+        android:id="@+id/remainingQuestionsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Remaining: 6/10"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextQuestionButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
