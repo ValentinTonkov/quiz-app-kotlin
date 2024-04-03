@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/introFragment"
         android:name="com.example.quizapp.IntroFragment"
-        android:label="fragment_intro"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_intro" >
         <action
             android:id="@+id/action_introFragment_to_questionsFragment"
@@ -19,7 +19,7 @@
     <fragment
         android:id="@+id/questionsFragment"
         android:name="com.example.quizapp.QuestionsFragment"
-        android:label="fragment_questions"
+        android:label="Solving test.."
         tools:layout="@layout/fragment_questions" >
         <action
             android:id="@+id/action_questionsFragment_to_successFragment"
@@ -38,4 +38,19 @@
         android:name="com.example.quizapp.FailFragment"
         android:label="fragment_fail"
         tools:layout="@layout/fragment_fail" />
+    <fragment
+        android:id="@+id/scoreBoardFragment"
+        android:name="com.example.quizapp.ScoreBoardFragment"
+        android:label="fragment_score_board"
+        tools:layout="@layout/fragment_score_board" />
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.example.quizapp.RulesFragment"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.quizapp.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
 </navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Score Board"
+        android:id="@+id/scoreBoardFragment"
+        android:icon="@drawable/baseline_sports_score_24"
+        />
+
+    <item android:title="Rules"
+        android:id="@+id/rulesFragment"
+        android:icon="@drawable/baseline_rule_24"
+        />
+
+    <item android:title="About"
+        android:id="@+id/aboutFragment"
+        android:icon="@drawable/baseline_info_24"
+        />
+</menu>
