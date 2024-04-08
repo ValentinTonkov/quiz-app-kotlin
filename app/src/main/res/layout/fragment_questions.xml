@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AAFF73"
     tools:context=".QuestionsFragment">
 
     <TextView
@@ -29,28 +28,28 @@
         app:layout_constraintTop_toBottomOf="@+id/questionText">
 
         <RadioButton
-            android:id="@+id/answer1Rb"
+            android:id="@+id/answerOneRb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sofia"
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/answer2Rb"
+            android:id="@+id/answerTwoRb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Veliko Tarnovo"
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/answer3Rb"
+            android:id="@+id/answerThreeRb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Plovdiv"
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/answer4Rb"
+            android:id="@+id/answerFourRb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pliska"
@@ -79,4 +78,39 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nextQuestionButton" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:singleSelection="true"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/scoreChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:checkable="true"
+            app:chipIcon="@drawable/baseline_sports_score_24" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/rulesChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rules"
+            android:checkable="true"
+            app:chipIcon="@drawable/baseline_rule_24" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/aboutChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:checkable="true"
+            app:chipIcon="@drawable/baseline_info_24" />
+    </com.google.android.material.chip.ChipGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
